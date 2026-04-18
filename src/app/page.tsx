@@ -1,9 +1,21 @@
-import { HeroSection } from "@/components/ui/hero-odyssey";
+import { Nav } from "@/components/sections/nav";
+import { Hero } from "@/components/sections/hero";
+import { About } from "@/components/sections/about";
+import { Work } from "@/components/sections/work";
+import { Stack } from "@/components/sections/stack";
+import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <div className="flex w-full h-screen justify-center items-center">
-      <HeroSection />
-    </div>
+    <main className="min-h-screen bg-black text-zinc-200 antialiased selection:bg-zinc-200 selection:text-black">
+      <Nav />
+      <Hero />
+      <About />
+      <Work />
+      <Stack />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
